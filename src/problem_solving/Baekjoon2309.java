@@ -45,7 +45,7 @@ public class Baekjoon2309 {
 			}
 		}
 
-		for (int i = 0; i < 9; i++) {
+		for (int i = 0; i < 9; i++) {   
 			if (i != a || i != b) {
 				System.out.println(arr[i]);
 			}*/
