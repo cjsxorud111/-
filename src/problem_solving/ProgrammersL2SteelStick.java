@@ -9,6 +9,7 @@ class ProgrammersL2SteelStick {
 		Stack<Character> stack = new Stack<Character>();
 		int count = 0;
 		int stackOut = 0;
+		
 		for (int i = 0; i < arrangement.length(); i++) {
 			if (arrangement.charAt(i) == '(') {
 				stack.push(')');
