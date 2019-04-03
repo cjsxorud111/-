@@ -3,8 +3,6 @@ package problem_solving;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
 
 class Solution01 {
 	public int[] solution(int[] answers) {
@@ -36,7 +34,7 @@ class Solution01 {
 		Collections.sort(list);
 
 		ArrayList<Integer> list02 = new ArrayList<Integer>();
-		if (stans1 == list.get(list.size()-1)) list02.add(1);
+		if (stans1 == list.get(list.size()-1)) list02.add(1); 
 		if (stans2 == list.get(list.size()-1)) list02.add(2);
 		if (stans3 == list.get(list.size()-1)) list02.add(3);
 		
