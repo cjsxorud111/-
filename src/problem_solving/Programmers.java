@@ -10,25 +10,25 @@ class Solution04 {
 		ArrayList<Integer> firstList = new ArrayList<Integer>();
 		ArrayList<Integer> secondList = new ArrayList<Integer>();
 		
-		for (int i = 0; i < matrix.length; i++) {
+		for (int i = 0; i < matrix.length; i++) { 
 			ArrayList<Integer> list = new ArrayList<Integer>();
-			for (int j = 0; j < matrix[0].length; j++) {
-				list.add(matrix[i][j]);
+			for (int j = 0; j < matrix[0].length; j++) { 
+				list.add(matrix[i][j]); // 행을1줄씩 리스트에 
 			}
 			Collections.sort(list);
-			firstList.add(list.get((list.size()-1)/2));
+			firstList.add(list.get((list.size()-1)/2)); //중간값 리스트에 
 		}
 		
 		for (int i = 0; i < matrix.length; i++) {
 			ArrayList<Integer> list = new ArrayList<Integer>();
 			for (int j = 0; j < matrix[0].length; j++) {
-				list.add(matrix[j][i]);
+				list.add(matrix[j][i]); // 을1줄씩 리스트에 
 			}
 			Collections.sort(list);
 			secondList.add(list.get((list.size()-1)/2));
 		}
 
-		firstList.retainAll(secondList);
+		firstList.retainAll(secondList); //중복외값 제거
 		
 		return firstList.size();
 	}
