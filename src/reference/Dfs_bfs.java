@@ -1,4 +1,4 @@
-package problem_solving;
+package reference;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
